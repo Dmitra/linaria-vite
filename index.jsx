@@ -8,15 +8,13 @@ const styles = css`
 `
 function App () {
   return (
-    <div className={ styles }></div>
+    <div className={ styles }>Test</div>
   )
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = createRoot(document.getElementById('root-container'))
+  const root = createRoot(document.getElementById('root'))
   root.render(
-    <Provider store={ store }>
-      <App/> }
-    </Provider>,
+    <App/>
   )
 })
